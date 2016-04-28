@@ -33,6 +33,7 @@ namespace Explore
 
             Entity entityTwo = myScene.createEntity("entity-two");
             entityTwo.addComponent(new Sprite(texture2));
+            entityTwo.addComponent(new SimpleMover());
 
             // move entityTwo to a new location so it isn't overlapping entityOne
             entityOne.transform.position = new Vector2(64, 64);
